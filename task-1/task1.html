@@ -1,0 +1,67 @@
+1. what is the different between http1.1 vs http 2 ?
+
+http1.1:
+    HTTP protocol was developed in 1989 as the common language
+ that enables client and server machines’ interaction.
+
+ http2:
+    HTTP/2 was released at Google as the significant improvement of
+its predecessor. It was initially modeled after the SPDY protocol
+and went through significant changes to include features like multiplexing,
+header compression, and stream prioritization to minimize page load latency.
+
+2. Write a blog about objects and its internal representation in Javascript:
+
+ Objects, in JavaScript, is it’s most important data-type and forms the
+building blocks for modern JavaScript.
+These objects are quite different from JavaScript’s primitive
+data-types(Number, String, Boolean, null, undefined and symbol) 
+in the sense that while these primitive data-types
+all store a single value each (depending on their types).
+
+codekata problem:
+Write a code to get the input in the given format and print the output in the given format
+
+Input Description:
+First-line indicates two integers separated by space.
+ Second-line indicates two integers separated by space.
+  Third-line indicates two integers separated by space.
+
+Output Description:
+Print the input in the same format.
+
+Sample Input :
+2 4
+2 4
+2 4
+Sample Output :
+2 4
+2 4
+2 4
+ 
+ code:
+
+
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+   
+  a=userInput[0]
+   b=userInput[1]
+    c=userInput[2]
+console.log(a);
+console.log(b);
+console.log(c);
+
+  //end-here
+});
